@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>像素报 · 第七期 — Ckey</title>
+<meta name="description" content="一个人，一份报纸，四个版面。Ckey 的个人作品集：设计、代码，以及留在屏幕边缘的一点毛边。" />
+<meta name="theme-color" content="#efe9dd" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23efe9dd'/%3E%3Crect x='6' y='6' width='52' height='52' fill='none' stroke='%23b23a26' stroke-width='4'/%3E%3Crect x='20' y='20' width='24' height='24' fill='%231a1713'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Noto+Serif+SC:wght@400;600;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="paper-grain" aria-hidden="true"></div>
+<div class="crop-marks" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+<div class="running-head" aria-hidden="true">像素报 · 第七期 · 独立创作者特刊</div>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span>第 07 期</span>
+    <span>独立创作者特刊</span>
+    <span id="today">二〇二六年十一月廿五日 · 星期三</span>
+    <span>定价：一杯咖啡</span>
+  </div>
+
+  <div class="masthead-main">
+    <h1 class="wordmark">像素报</h1>
+    <p class="wordmark-latin">Pixel&nbsp;Daily</p>
+    <aside class="ear">
+      <p class="ear-label">报眼</p>
+      <p>本版广告位<br />留给下一个<br />好想法。</p>
+    </aside>
+  </div>
+
+  <div class="masthead-bottom">
+    <span>杭州 · 晴 · 12℃</span>
+    <span>本期四版 · 共一页</span>
+    <span>印刷：本机</span>
+  </div>
+</header>
+
+<nav class="edition-nav" aria-label="版面导航">
+  <div class="edition-nav-inner">
+    <a href="#front" data-edition="01" class="is-active"><b>01</b> 头版 · 自述</a>
+    <a href="#works" data-edition="02"><b>02</b> 作品</a>
+    <a href="#chron" data-edition="03"><b>03</b> 年表</a>
+    <a href="#notice" data-edition="04"><b>04</b> 启事</a>
+    <span class="nav-edition">第 <em id="edition-num">01</em> 版</span>
+  </div>
+</nav>
+
+<main class="sheet">
+
+  <!-- ============ 头版 ============ -->
+  <section class="front" id="front">
+
+    <aside class="front-index">
+      <p class="smallcaps">本期要目</p>
+      <ol class="toc">
+        <li><a href="#front"><span>头版 · 一封自述</span><b>01</b></a></li>
+        <li><a href="#works"><span>二版 · 四件作品</span><b>02</b></a></li>
+        <li><a href="#chron"><span>三版 · 年表</span><b>03</b></a></li>
+        <li><a href="#notice"><span>末版 · 启事</span><b>04</b></a></li>
+      </ol>
+
+      <div class="stamp" id="stamp" aria-hidden="true">
+        <span>已 阅</span>
+        <small>2026.11</small>
+      </div>
+
+      <p class="index-note">本期共四版，一页读完。<br />阅读约六分钟，不含回想。</p>
+    </aside>
+
+    <article class="lead">
+      <p class="kicker"><span>封面故事</span> / 人物</p>
+
+      <h2 class="lead-head">他给屏幕<br />留了一点<em>毛边</em></h2>
+
+      <p class="deck">Ckey 的八年：画界面、写代码，以及学会删掉最后一个动效。</p>
+
+      <figure class="lead-figure">
+        <div class="fig-wrap">
+          <img src="assets/lead.jpg" alt="木刻风格的插画：一双手在工作台上，把铅字排进字盘" width="1248" height="832" />
+        </div>
+        <figcaption><span>图</span> 工作台上的字模。摄于杭州，一个没有项目交付的下午。</figcaption>
+      </figure>
+
+      <div class="lead-body">
+        <p>第一次看到他的作品，是一个只有三屏的咖啡品牌站。滚动到一半，烘焙曲线从页面底部长出来，像温度计一样慢慢变红。没有视频，没有三维模型，全是几个数字和一段贝塞尔曲线。</p>
+        <p>「那天做到凌晨四点。」他说，「不是因为它难，是因为停不下来。」</p>
+        <p>严格来说，Ckey 不是个容易归类的人。白天做界面，晚上写代码；给客户搭设计系统，给自己写只有 2KB 的噪点库。八年下来，他攒了一堆半成品：一个没上线的字体工具、三个改了七遍的首页、一整套从来没写完的设计规范。</p>
+        <p>问他怎么判断一个页面「做完了」，他想了一会儿：「当你不再想往上加东西的时候。大部分时候，是删掉最后一个动效的那天。」</p>
+      </div>
+
+      <p class="byline">文 / 本报编辑部　图 / 本人　校对 / 一只猫</p>
+    </article>
+
+    <aside class="front-rail">
+      <div class="almanac">
+        <p class="almanac-title">今日宜忌</p>
+        <dl>
+          <div><dt>宜</dt><dd>删掉一个动效</dd></div>
+          <div><dt>宜</dt><dd>把行高调到 1.7</dd></div>
+          <div><dt>忌</dt><dd>再加一层渐变</dd></div>
+          <div><dt>忌</dt><dd>开会</dd></div>
+        </dl>
+        <p class="almanac-foot">杭州 · 湿度 62%<br />风向：东南，很轻</p>
+      </div>
+
+      <div class="facts">
+        <p class="smallcaps">档案</p>
+        <dl>
+          <div><dt>现居</dt><dd>杭州</dd></div>
+          <div><dt>开始</dt><dd>2016</dd></div>
+          <div><dt>落地</dt><dd>40+</dd></div>
+          <div><dt>咖啡</dt><dd>3 杯 / 天</dd></div>
+        </dl>
+      </div>
+    </aside>
+
+  </section>
+
+  <!-- ============ 第二版 ============ -->
+  <section class="page" id="works">
+    <div class="page-head">
+      <span class="page-no">第二版</span>
+      <h2>作品</h2>
+      <span class="page-meta">四件 · 2019 — 2026</span>
+    </div>
+
+    <div class="work-grid">
+
+      <article class="work work-a">
+        <p class="work-kicker"><b>01</b> 产品 / 界面</p>
+        <h3>Lumen 笔记</h3>
+        <p class="work-deck">只做一件事的笔记应用：写下来的东西，三个月后还能找到。</p>
+        <p class="work-note">42 个组件的设计系统，所有动效由一个 CSS 变量控制。打包后 38KB——没有图表库，也没有动画库。</p>
+        <p class="work-meta"><span>设计</span><span>前端</span><span>2025</span></p>
+      </article>
+
+      <article class="work work-b">
+        <p class="work-kicker"><b>02</b> 创意编程</p>
+        <h3>声音的形状</h3>
+        <p class="work-deck">把一段音频变成会呼吸的粒子雕塑。</p>
+        <p class="work-note">为一场线上音乐会做的开场。十二万个粒子跟着频谱起伏，观众的鼠标可以搅动它。演出那晚，服务器崩了两次。</p>
+        <p class="work-meta"><span>WebGL</span><span>音频</span><span>2024</span></p>
+      </article>
+
+      <article class="work work-c">
+        <p class="work-kicker"><b>03</b> 品牌 / 官网</p>
+        <h3>山野咖啡</h3>
+        <p class="work-deck">三天做完的品牌站，后来成了一个不大不小的案例。</p>
+        <p class="work-note">全站只有四个颜色、两种字体。烘焙曲线用滚动驱动，从生豆的绿一直走到深烘的褐。</p>
+        <p class="work-meta"><span>品牌</span><span>叙事滚动</span><span>2023</span></p>
+      </article>
+
+      <article class="work work-d">
+        <p class="work-kicker"><b>04</b> 开源</p>
+        <h3>grain.css</h3>
+        <p class="work-deck">2KB 的颗粒质感，一行引入。</p>
+        <p class="work-note">被用在两百多个项目里，包括一个银行的后台。作者本人至今不知道那家银行是谁。</p>
+        <p class="work-meta"><span>CSS</span><span>开源</span><span>2021</span></p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ 第三版 ============ -->
+  <section class="page" id="chron">
+    <div class="page-head">
+      <span class="page-no">第三版</span>
+      <h2>年表</h2>
+      <span class="page-meta">2016 — 2026 · 绕了一点远路</span>
+    </div>
+
+    <ol class="chron-list">
+      <li>
+        <span class="chron-text">第一份工作。把后台表格的行高从 32 改成 28，被夸了一整周。</span>
+        <span class="dots" aria-hidden="true"></span>
+        <span class="chron-year">2016</span>
+      </li>
+      <li>
+        <span class="chron-text">去了一家小工作室，第一次同时拿着数位板和编辑器干活。</span>
+        <span class="dots" aria-hidden="true"></span>
+        <span class="chron-year">2019</span>
+      </li>
+      <li>
+        <span class="chron-text">一个作品上了 Awwwards。截图存了三年，至今没删。</span>
+        <span class="dots" aria-hidden="true"></span>
+        <span class="chron-year">2021</span>
+      </li>
+      <li>
+        <span class="chron-text">成为独立创作者。开始拒掉不心动的项目，收入少了三成，睡得好了很多。</span>
+        <span class="dots" aria-hidden="true"></span>
+        <span class="chron-year">2023</span>
+      </li>
+      <li>
+        <span class="chron-text">正在做一件还不能说出口的东西。年底见。</span>
+        <span class="dots" aria-hidden="true"></span>
+        <span class="chron-year">2026</span>
+      </li>
+    </ol>
+
+    <p class="chron-note">（未完，预计还有若干年。）</p>
+  </section>
+
+  <!-- ============ 末版 ============ -->
+  <section class="page" id="notice">
+    <div class="notice-frame">
+      <p class="kicker"><span>末版</span> / 启事</p>
+      <h2 class="notice-head">寻人</h2>
+      <p class="notice-lede">寻找一个值得做三个月的想法。</p>
+      <p class="notice-body">
+        产品、官网、某个说不太清楚的小实验，都算。写信给我，说说它长什么样、卡在哪里。
+        通常二十四小时内回信；周末在山上，可能会晚一点。
+      </p>
+
+      <a class="mail" href="mailto:hello@ckey.design">
+        <span class="mail-label">来信请寄</span>
+        <span class="mail-addr">hello@ckey.design</span>
+      </a>
+
+      <div class="coupon">
+        <p><b>凭此角</b>　可兑换一次三十分钟的免费咨询，聊什么都行，包括但不限于：这个需求该不该做。</p>
+        <span class="coupon-cut">✂ 沿虚线剪下</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="imprint">
+  <span>像素报 · 第七期</span>
+  <span>二〇二六年十一月 · 杭州</span>
+  <span>排印：HTML / CSS / 一点点 JS</span>
+  <span class="page-num">01</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
